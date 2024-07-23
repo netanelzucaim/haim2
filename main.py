@@ -13,18 +13,18 @@ class PythonCornerExample(SMWinservice):
         self.isrunning = True
         
 
-    def stop(self):
-        self.isrunning = False
+    # def stop(self):
+    #     self.isrunning = False
 
-    def main(self):
-        i = 0
-        while self.isrunning:
-            '''
-            random.seed()
-            x = random.randint(1, 1000000)
-            Path(f'c:{x}.txt').touch()
-            '''
-            time.sleep(20)
+    # def main(self):
+    #     i = 0
+    #     #while True:
+    #         # '''
+    #         # random.seed()
+    #         # x = random.randint(1, 1000000)
+    #         # Path(f'c:{x}.txt').touch()
+    #         # '''
+    #     time.sleep(5)
 
 if __name__ == '__main__':
     PythonCornerExample.parse_command_line()
